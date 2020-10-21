@@ -34,3 +34,11 @@ class Widget():
 
 if __name__ == '__main__':
     widget = Widget()
+    
+    
+#import pyttsx3
+#engine = pyttsx3.init()
+
+#engine.say("Your Text")
+
+#engine.runAndWait()
