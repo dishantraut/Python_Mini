@@ -1,0 +1,27 @@
+"""
+# Reference URL :-  https://www.geeksforgeeks.org/python-designing-gui-applications-using-pyqt/
+
+# Designing GUI applications Using PyQt in Python
+
+Building GUI applications using PYQT designer tool is comparatively less time consuming than code the widgets. 
+It is one of the fastest and easiest ways to create GUIs.
+Qt-designer, one can simply drag and drop the widgets, which comes very useful while developing big-scale applications.
+
+QT Designer will be located at MyPythonInstallationDir\Lib\site-packages\pyqt5-tools, and is named designer.exe (on Windows OS).
+# PATH   =   C:\Users\kmc445\Anaconda3\Lib\site-packages\pyqt5_tools\Qt\bin
+  Open the file called as 'designer.exe'
+
+pip install pyqt5
+pip install pyqt5-tools
+pip_upgrade_outdated
+
+
+Save the file :
+The file will be saved with .ui extension. To convert this file (.ui extension) to Python file (.py extension), 
+follow these steps :
+
+1 . Open terminal and navigate to the folder where the layout.ui file is present.
+2 . To convert into Python file, type pyuic5 -x layout.ui -o layout.py on terminal.
+3 . Run layout.py using python!
+
+"""
