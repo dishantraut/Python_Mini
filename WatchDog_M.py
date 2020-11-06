@@ -1,4 +1,5 @@
 # https://thepythoncorner.com/dev/how-to-create-a-watchdog-in-python-to-look-for-filesystem-changes/
+# https://levelup.gitconnected.com/how-to-monitor-file-system-events-in-python-e8e0ed6ec2c
 
 import time
 from watchdog.observers import Observer
