@@ -1,0 +1,30 @@
+# Run This Progam
+import pkg_resources
+from subprocess import call
+
+packages = [dist.project_name for dist in pkg_resources.working_set]
+call("pip install --upgrade " + ' '.join(packages), shell=True)
+
+OR
+
+# pip install pip-upgrade-outdated
+# pip_upgrade_outdated
+
+OR
+
+# pip install pip-upgrader
+# pip-upgrade
+
+OR
+
+# pip install pip-review
+# pip-review --local --interactive
+
+OR
+
+# pip install pipupgrade
+# pipupgrade --verbose --latest --yes
+
+OR
+
+# pip freeze > requirements.txt && pip install -r requirements.txt --upgrade && del requirements.txt
