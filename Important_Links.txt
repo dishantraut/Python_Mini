@@ -1,3 +1,5 @@
 # All the Core Functions of Python Pandas You Need to Know
+
+https://timber.io/blog/docker-and-the-rise-of-microservices/#:~:text=With%20Docker%2C%20you%20can%20make,ship%20and%20deploy%20your%20application.
 https://towardsdatascience.com/all-the-core-functions-of-python-pandas-you-need-to-know-d219cbd87636
 
