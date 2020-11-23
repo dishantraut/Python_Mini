@@ -10,3 +10,5 @@ https://www.remove.bg/upload
 https://regex101.com/
 # Ready Made Slides
 https://www.slidescarnival.com/
+# Outlook Automation
+https://github.com/israel-dryer/Outlook-Python-Tutorial/wiki/Plain-text-email
