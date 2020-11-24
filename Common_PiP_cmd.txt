@@ -1,0 +1,48 @@
+# Get no pip installed error
+python -m ensurepip
+
+# pip freeze 
+# pip list
+# pip freeze > req.txt
+
+# Update PIP
+pip freeze > requirements.txt && pip install --upgrade -r requirements.txt && del requirements.txt
+
+# Update PIP with resolver
+pip freeze > requirements.txt && pip install --upgrade -r requirements.txt --use-feature=2020-resolver && del requirements.txt
+
+# Upgrade PIP
+pip install --upgrade pip
+python -m pip install -U pip wheel setuptools
+
+# Get no pip installed error
+python -m ensurepip
+
+# CODE Upgrade every present module
+import pkg_resources
+from subprocess import call
+
+packages = [dist.project_name for dist in pkg_resources.working_set]
+call("pip install --upgrade " + ' '.join(packages), shell=True)
+
+
+# pip install Package_Name -U --user
+# python -m pip install -U pip
+# python -m pip install --upgrade pip
+# pip install -U Package_Name
+# pip install Package_Name -U
+# pip install -U eventlet
+
+# Feature Resolver
+pip install Package_Name --use-feature=2020-resolver 
+
+# Report Erros Conda
+conda config --set report_errors true
+
+# Clean Conda Cache
+conda clean --all
+
+# Clean PIP cache
+pip cache purge
+pip cache list
+
