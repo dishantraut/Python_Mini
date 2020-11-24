@@ -2,13 +2,21 @@
 
 # VM / Docker 
 https://timber.io/blog/docker-and-the-rise-of-microservices/#:~:text=With%20Docker%2C%20you%20can%20make,ship%20and%20deploy%20your%20application.
+
 # Pandas Core Funcitons
 https://towardsdatascience.com/all-the-core-functions-of-python-pandas-you-need-to-know-d219cbd87636
+
 # Remove BackGround From Images
 https://www.remove.bg/upload
+
 # RegEx Testing
 https://regex101.com/
+
 # Ready Made Slides
 https://www.slidescarnival.com/
+
 # Outlook Automation
 https://github.com/israel-dryer/Outlook-Python-Tutorial/wiki/Plain-text-email
+
+# Python Most Useful Repository
+https://github.com/trananhkma/fucking-awesome-python#admin-panels
