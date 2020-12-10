@@ -1,3 +1,10 @@
+# Make Virtual Environment
+1. python -m venv VE_Name
+2. open cmd 
+3. cd VE_Name
+4. Scripts\activate
+
+
 # Get no pip installed error
 python -m ensurepip
 
