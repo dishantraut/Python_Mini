@@ -46,3 +46,6 @@ conda clean --all
 pip cache purge
 pip cache list
 
+# Uninstall all packages together
+1. pip freeze > req.txt
+2. pip uninstall -r req.txt -y
