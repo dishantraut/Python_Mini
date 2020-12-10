@@ -1,3 +1,8 @@
+# Atom
+path = C:\WINDOWS\System32\cmd.exe
+install = apm install terminus
+
+
 # Make Virtual Environment
 1. python -m venv VE_Name
 2. open cmd 
