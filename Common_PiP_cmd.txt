@@ -8,6 +8,7 @@ install = apm install terminus
 2. open cmd 
 3. cd VE_Name
 4. Scripts\activate
+5. pip install -r req.txt
 
 
 # Get no pip installed error
