@@ -62,3 +62,55 @@ pip cache list
 # Uninstall all packages together
 1. pip freeze > req.txt
 2. pip uninstall -r req.txt -y
+
+# Commands to create a Virtual_Environment in CMD
+-------------------------------------------------------------------------------------------------
+python -m venv "path"+"name"
+cd folder_name
+Scripts\activate
+deactivate
+-------------------------------------------------------------------------------------------------
+pip install package_name -U
+pip install --upgrade <package>==<version>
+-------------------------------------------------------------------------------------------------
+
+# pip important commands 
+-------------------------------------------------------------------------------------------------
+python -m pip install --upgrade pip
+pip freeze > req.txt
+pip install -r req.txt
+pip install -U -r req.txt
+pip install --upgrade -r req.txt
+pip install -r req.txt --upgrade 
+pip install --upgrade --force-reinstall -r req.txt
+pip install --ignore-installed -r req.txt
+-------------------------------------------------------------------------------------------------
+pip_upgrade_outdated
+-------------------------------------------------------------------------------------------------
+pip-review --local --interactive
+-------------------------------------------------------------------------------------------------
+pip-upgrade
+-------------------------------------------------------------------------------------------------
+pipdate
+-------------------------------------------------------------------------------------------------
+
+# Python Script to update all packages in system /VE
+-------------------------------------------------------------------------------------------------
+import pkg_resources
+from subprocess import call
+
+packages = [dist.project_name for dist in pkg_resources.working_set]
+call("pip install --upgrade " + ' '.join(packages), shell=True)
+
+-------------------------------------------------------------------------------------------------
+# CMD commands
+for /F "delims===" %i in ('pip freeze -l') do pip install -U %i
+for /F "delims= " %i in ('pip list --outdated') do pip install -U %i
+-------------------------------------------------------------------------------------------------
+pip freeze > requirements.txt && pip install --upgrade -r requirements.txt && del requirements.txt
+-------------------------------------------------------------------------------------------------
+pip freeze > req.txt
+pip list > req_list.txt
+
+
+
