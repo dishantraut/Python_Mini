@@ -7,7 +7,7 @@ install = apm install terminus
 1. python -m venv VE_Name
 2. open cmd 
 3. cd VE_Name
-4. Scripts\activate
+4. Scripts\activate OR workon VE_Name
 5. pip install -r req.txt
 
 
