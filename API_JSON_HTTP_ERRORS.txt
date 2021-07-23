@@ -1,0 +1,56 @@
+Includes:
+- Application Program Interfaces (APIs)
+- JavaScript Object Notation (JSON)
+- Requests with Python
+- Real world use-cases
+
+
+# Application Program Interfaces
+
+An API is like a magic box. We send data — in a specified format. We then get data back — in a specified format.
+This magical box is simply a script kept on a server. 
+It acts as a gatekeeper — we tell the gatekeeper that we would like to know, change, or delete something, 
+and the gatekeeper will (hopefully) perform the action we request and let us know how it went.
+
+# REST
+RESTful API architecture applies six key constraints:
+
+    All requests are handled via a single outward-facing interface.
+    Client-server independence — development and functional changes on one side should not affect the other (client refers to us, and server refers to API).
+    Statelessness — the server does not retain any information about our session; every request is treated as new.
+    Caching — the API should specify whether it’s responses can be cached by the user (if a response is valid until a specific time, 
+    the API can tell us Expires Wed, 17 May 2020 07:12:27 UTC).
+    Use of layered systems — meaning the API is comprised of layers, where each layer connects to another, creating a modular structure.
+    If applicable, the API should be able to provide the user with executable code on request.
+
+# Methods
+When communicating with an API, we tend to use four methods:
+
+    GET — Used to retrieve information from the API.
+    POST — Creates a new resource (e.g., a GitHub repo).
+    PUT — Updates an existing resource.
+    DELETE — Deletes an existing resource.
+    PATCH — this is used for partial updates, similar to PUT. 
+
+
+# HTTP Codes
+When using GET, POST, PUT, and DELETE, we will usually receive one of the following codes:
+
+	2xx - Success Codes
+	200 OK - success (most common with GET)
+	201 Created - request fulfilled and new resource created (POST/PUT)
+	204 No Content - success but no content is returned in response4xx - Client Error Codes
+	400 Bad Request - request could not be understood due to bad syntax
+	401 Unauthorized - most likely we missed the auth key
+	403 Forbidden - we're trying to go places we're not allowed
+	404 Not Found - what we're trying to access doesn't existHonorable Mentions
+	418 I'm a teapot - stop asking a teapot to brew coffee
+	420 Enhance Your Calm - sending to many requests to Twitter
+
+# JavaScript Object Notation
+When communicating with APIs, 
+we need a standardized template for sending and receiving data so both the API and 
+ourselves can process the data correctly. This format is JavaScript Object Notation (JSON).
+JSON implements the same hierarchical structure with key-value pairs that we find in Python dictionaries.
+
+
