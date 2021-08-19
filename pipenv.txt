@@ -1,0 +1,81 @@
+# https://rapidevelop.org/python/pipenv-practical-guide
+# https://dev.to/davidshare/setting-up-a-python-development-environment-with-pipenv-3lfj
+
+--------------------------------------------------------------------------------------------------------------------
+
+# * pipenv
+
+--------------------------------------------------------------------------------------------------------------------
+
+pip + venv = pipenv
+a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world
+It harnesses Pipfile, pip, and virtualenv into one single command
+a tool that creates and manages a virtual environment for your projects
+adds or removes packages from your Pipfile as you install or uninstall them
+generates the Pipfile.lock, which we use to produce deterministic builds &
+create a snapshot of our working environment
+provides us with an easy method to set up a working environment.
+We no longer need to use pip and virtualenv separately
+They work together
+
+* pip install --user pipenv -U
+* pip install pipenv -U
+
+We might need to replace pip with pip3 depending on the Python version you have installed on your computer
+
+mkdir TRY
+cd TRY
+pipenv shell
+
+--------------------------------------------------------------------------------------------------------------------
+
+We will notice a Pipfile
+The pipfile is written in a configuration language call TOML(Tom’s Obvious Minimal Language)
+It is meant for writing easy to read configuration files
+
+[Line 6]
+indicates the section where production based packages will be listed	
+
+[Line 8]
+indicates where packages that will be used for development purposes only will be listed. 
+These packages will not be installed in production environments, only in testing and development environments.
+
+[Line 11]
+indicates the version of python used or required.
+Note that you can manually add the packages to this file, and run pipenv install on your terminal to install them.
+
+--------------------------------------------------------------------------------------------------------------------
+
+pipenv install django
+pipenv install pillow
+pipenv uninstall pillow
+pipenv install pillow --dev
+pipenv uninstall pillow
+
+--------------------------------------------------------------------------------------------------------------------
+
+We will notice that I did not specify the version of Django to install
+We will also notice that it searched for a Pipfile.lock file and created one when it could not find any
+This file keeps track of all the installed packages and their dependencies
+
+--------------------------------------------------------------------------------------------------------------------
+
+* Create a requirements.txt file
+pipenv lock -r
+
+--------------------------------------------------------------------------------------------------------------------
+
+* Wrtie in 'try.py' file
+
+import os
+import sys
+
+print(sys.executable)
+print(os.environ['PASSWORD'])
+
+# * Run Python Shell
+# pipenv run python
+# * Run "try.py "File
+# pipenv run python try.py
+
+--------------------------------------------------------------------------------------------------------------------
