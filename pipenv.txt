@@ -79,3 +79,19 @@ print(os.environ['PASSWORD'])
 # pipenv run python try.py
 
 --------------------------------------------------------------------------------------------------------------------
+
+# Common pipenv commands
+
+pipenv --python 3.8.5
+pipenv update --outdated
+pipenv update 
+pipenv update <module_name>
+pipenv install --ignore-pipfile
+pipenv lock
+pipenv --rm
+pipenv install --dev pylint
+pipenv run python
+pipenv run python <filename.py>
+python -m site --user-base
+py -m site --user-site
+setx PATH "%PATH%;C:\Users\[YOUR_USER_NAME]\AppData\Roaming\Python\Python38\Scripts"
