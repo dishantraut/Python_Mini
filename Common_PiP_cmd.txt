@@ -27,6 +27,7 @@ pip freeze > requirements.txt && pip install --upgrade -r requirements.txt --use
 # Upgrade PIP
 pip install --upgrade pip
 python -m pip install -U pip wheel setuptools
+python3 -m pip install -U pip wheel setuptools
 
 # Get no pip installed error
 python -m ensurepip
