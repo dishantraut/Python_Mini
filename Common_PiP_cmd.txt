@@ -68,6 +68,19 @@ pip cache list
 1. pip freeze > req.txt
 2. pip uninstall -r req.txt -y
 
+
+# Steps For Jupyter On Linode Server :-
+1. ssh <username>@<ip>
+   Enter Password = <pwd>
+2. source VE/bin/activate
+3. cd VE
+4. jupyter notebook --ip 0.0.0.0 --port=<port_no>     OR       python3 -m notebook --ip 0.0.0.0 --port=<port_no>
+5. http://<ip>:<port>/
+6. Copy the token from putty and paste on browser
+
+
+
+
 # Commands to create a Virtual_Environment in CMD
 -------------------------------------------------------------------------------------------------
 python -m venv "path"+"name"
@@ -116,6 +129,5 @@ pip freeze > requirements.txt && pip install --upgrade -r requirements.txt && de
 -------------------------------------------------------------------------------------------------
 pip freeze > req.txt
 pip list > req_list.txt
-
 
 
