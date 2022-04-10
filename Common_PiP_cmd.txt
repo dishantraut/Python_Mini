@@ -74,7 +74,12 @@ pip cache list
    Enter Password = <pwd>
 2. source VE/bin/activate
 3. cd VE
-4. jupyter notebook --ip 0.0.0.0 --port=<port_no>     OR       python3 -m notebook --ip 0.0.0.0 --port=<port_no>
+4. jupyter notebook --ip 0.0.0.0 --port=<port_no>
+   OR 
+   python3 -m notebook --ip 0.0.0.0 --port=<port_no>
+   OR
+   python3 -m notebook --help
+
 5. http://<ip>:<port>/
 6. Copy the token from putty and paste on browser
 
