@@ -57,6 +57,9 @@ pip install Package_Name --use-feature=2020-resolver
 # Report Erros Conda
 conda config --set report_errors true
 
+# Time the statements / imports
+python3 -m timeit -s 'import math; x= 10000000000; math.sqrt(x)
+
 # Clean Conda Cache
 conda clean --all
 
